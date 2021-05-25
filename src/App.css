@@ -1,0 +1,163 @@
+
+.color-nav{
+    background-color:#fec608;
+    
+  }
+.navText{
+    color: black!important;
+}
+
+.backgr{
+  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.bioData{
+  background-color: white;
+  padding: 30px;
+}
+
+#homeImage{
+  padding:5px;
+  /* border: 3px solid #204c55; */
+  border-radius: 20px;
+  text-align: center;
+  height: 420px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.myself{
+  padding-left:50px!important;
+}
+
+.myself h4{
+  color:#666666;
+}
+
+.myself p{
+  color:#949494;
+}
+
+.myName{
+  color: #fec608;
+}
+
+.personal-info ul{
+  display: inline-block;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.personal-info li a{
+  font-size: 15px;
+  line-height: 26px;
+  color: #949494;
+}
+
+.iconStyle{
+  padding-top: 20px;
+  text-align: center;
+  
+}
+
+.iconStyle span{
+  padding-right: 20px;
+}
+.download_btn{
+  display: block;
+  margin-top: 20px;
+  background: #fec608;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #222222;
+    font-size: 18px;
+    font-family: "Yellowtail", cursive;
+    position: relative;
+    overflow: hidden;
+}
+
+.download_btn span {
+  display: inline-block;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  transition: all 400ms linear 0s;
+}
+
+.skill{
+  background-color: #efefef;
+  margin:0;
+  padding-bottom: 30px;
+ 
+}
+
+.skill-head-text h2{
+  text-align: center;
+  font-size: 36px;
+  font-family: "Bree Serif", serif;
+  color: #222222;
+  text-transform: uppercase;
+  border: 1px solid #222222;
+  margin-top: 60px;
+
+}
+
+#skill-info{
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+#skill-info h4 {
+  font-family: "Raleway",sans-serif;
+  color: #333;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+#skill-info p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Raleway",sans-serif;
+  color: #333;
+}
+.single-skill{
+  height: 80px;
+}
+
+.single-skill h5 {
+  font-size: 16px;
+  color: #333;
+  font-family: "Raleway",sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+.progress-bar {
+  background-color: #fec608!important;
+ 
+}
+
+/* .skill-head h2 {
+  font-size: 36px;
+  font-family: "Bree Serif", serif;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #222222;
+  display: inline-block;
+  line-height: 58px;
+  padding: 0px 23px;
+} */
+
+
