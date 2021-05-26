@@ -7,6 +7,7 @@ import Photo from './images/Photo.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook,faLinkedin,faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import MySkill from "./MySkill";
+import Education from "./Education";
 
 
 const Home = () => {
@@ -21,18 +22,22 @@ const Home = () => {
           <div className="container bioData">
           <div className="">
                <div className="row">
-                 <div className="col-md-4" id="homeImage">
+                 <div className="col-xs-12 col-sm-12 col-md-4" id="homeImage">
                    <img 
                      src={Photo}
                      alt="myPhoto" 
                    />
-
-                   <a className="download_btn">
-                     <span>Download Resume</span>
-                   </a>
-                                    
+                   <div className="row btnCv">
+                     <div className="col-md-12">
+                     <a className="download_btn">
+                         <span>Download Resume</span>
+                     </a>
+                            
+                     </div>
+                   </div>
+                         
                  </div>
-                 <div className="col-md-8 myself">
+                 <div className="col-xs-12 col-sm-12 col-md-8 myself">
                     <h1>HI I'M <span className="myName">MAMUNUR RAJA</span> </h1>
                     <h4>Web Designer and Web Developer</h4>
                     <p>My name is Bernard Shelly. I am 32 years old. Lorem ipsum dolor sit amet, consectetur ascing elits, sed do eiusmod tempor incidunt ut labore et dolore mafgna aliqua. Ut enim ad mini vniam quis nerci, tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis autes irure dolor in reprehenderit in etrs voluptate velit esse cillum dolore eu fugiat nulla pariatur. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
@@ -93,6 +98,7 @@ const Home = () => {
           </div>
           </div>
           <MySkill/>
+          <Education/>
         </>
      );
 }

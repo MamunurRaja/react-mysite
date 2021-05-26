@@ -105,7 +105,6 @@ img {
   font-family: "Bree Serif", serif;
   color: #222222;
   text-transform: uppercase;
-  border: 1px solid #222222;
   margin-top: 60px;
 
 }
@@ -146,6 +145,34 @@ img {
 .progress-bar {
   background-color: #fec608!important;
  
+}
+
+.edu{
+  background-color: white;
+  padding-left: 40px!important;
+  padding-bottom: 30px;
+}
+
+.edu-info{
+  padding-top: 30px;;
+}
+
+.btnCv{
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 801px) {
+   .myself{
+     margin-top: 60px;
+   }
+
+   .edu-card{
+     margin-top: 30px;
+     text-align: center!important;
+   }
+   .edu-info card{
+    text-align: center!important;
+   }
 }
 
 /* .skill-head h2 {
