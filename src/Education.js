@@ -1,5 +1,6 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Card from 'react-bootstrap/Card';
 import derby from './images/derby.png';
 import homes from './images/homes.jpg';
@@ -7,9 +8,12 @@ import saptashri from './images/saptashri.jpg';
 
 const Education = () => {
     return ( 
+        
         <>
-          <div className="container edu">
-          <div className="row skill-head-text">
+            
+            <div className="container edu">
+            
+              <div className="row skill-head-text">
                 <div className="col-md-12">
                     <h2><u>Education</u></h2>
                 </div>               

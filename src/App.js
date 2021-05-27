@@ -17,7 +17,6 @@ function App() {
     <Router>
     <div className="App">
         <NavigationBar/>
-        
          <div className="backgr">
               <Switch>
                  <Route exact path='/'>
