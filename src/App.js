@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import MySkill from './MySkill';
 import Education from './Education';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
                  </Route>
                  <Route exact path='/education'>
                     <Education/>
+                 </Route>
+                 <Route exact path='/contact'>
+                    <Contact/>
                  </Route>
               </Switch>
          </div>

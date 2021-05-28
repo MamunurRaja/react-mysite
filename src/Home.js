@@ -114,10 +114,8 @@ const Home = () => {
           </div>}
               {!isLoading && <MySkill/>}
              {!isLoading && <Education/>}
-             <Contact/>
+             {!isLoading && <Contact/>}
         </>
      );
 }
-
- 
 export default Home;

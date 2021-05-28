@@ -4,17 +4,20 @@ import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 import Alert from 'react-bootstrap/Alert'
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhoneVolume,faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
     const [name,setName]=useState('');
     const [email,setEmail]=useState('');
+    const [phone,setPhone]=useState('');
     const [subject,setSubject]=useState('');
     const [body,setBody]=useState('');
     const [isSending,setIsSending]=useState(false);
     const [success,setSuccess]=useState(false);
 
 
-    const msg={name,email,subject,body};
+    const msg={name,email,phone,subject,body};
 
     const handleSubmit=(e)=>{
         e.preventDefault();
@@ -30,6 +33,7 @@ const Contact = () => {
               if (response.status===200) {
                 setIsSending(false);
                 setSuccess(true);
+                setName('');setEmail('');setPhone('');setSubject('');setBody('');
               }
             })
             .catch((err) => {
@@ -50,11 +54,47 @@ const Contact = () => {
                          <h3>Contact Info</h3>
                      </div>
                      <p>
-                         There are many variations of passages of Lorem Ipsum available, but the et majori have suffered alteration in some form, by injected humour, Domised words which don't look even slightly believable. If you are going to use a pas of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                         Thank you very much for visiting my website. If you have any querie, please feel free to send me the message. I will try to get back to you as soon as possible.
                     </p>
-                     <p>
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                     </p>
+                     
+                     <div className="row contact-row-address">
+                         <div className="col-md-2">
+                            <FontAwesomeIcon 
+                              icon={faMapMarkerAlt} 
+                              color="#fec608"
+                              size="2x"
+                            />
+                         </div>
+                         <div className="col-md-10">
+                              <strong>Permanent :</strong>  Kash Naogaon, Naogaon Sadar. <br />
+                              <strong>Present   :</strong>Mohisbathan, Rajpara, Rajshahi.
+                         </div>
+                     </div>
+                     <div className="row contact-row-address">
+                         <div className="col-md-2">
+                            <FontAwesomeIcon 
+                              icon={faPhoneVolume} 
+                              color="#fec608"
+                              size="2x"
+                            />
+                         </div>
+                         <div className="col-md-10">
+                              +880-1799427731 <br />
+                              +880-1517316752
+                         </div>
+                     </div>
+                     <div className="row contact-row-address">
+                         <div className="col-md-2">
+                            <FontAwesomeIcon 
+                              icon={faEnvelope} 
+                              color="#fec608"
+                              size="2x"
+                            />
+                         </div>
+                         <div className="col-md-10">
+                              raja.mamunur@gmail.com <br />raja.mamunur@yahoo.com 
+                         </div>
+                     </div>
                  </div>
                 
                  <div className="col-md-6">
@@ -63,11 +103,12 @@ const Contact = () => {
                       </div>
                       <div className="row">
                           <div className="col-md-12">
-                          <Form  onSubmit={handleSubmit}>
+                          <Form  onSubmit={handleSubmit} className="contact-email-form">
                               <Form.Group controlId="formBasicEmail">
                                  <Form.Control 
                                      type="text" 
                                      placeholder="Enter Your Name" 
+                                     required
                                      value={name}
                                      onChange={(e)=>setName(e.target.value)}
                                 />
@@ -76,6 +117,7 @@ const Contact = () => {
                                  <Form.Control 
                                  type="email"
                                   placeholder="Enter email" 
+                                  required
                                   value={email}
                                   onChange={(e)=>setEmail(e.target.value)}
                                   />
@@ -83,7 +125,17 @@ const Contact = () => {
                                 <Form.Group controlId="formBasicEmail">
                                  <Form.Control 
                                  type="text"
+                                  placeholder="Enter Your Phone Number" 
+                                  required
+                                  value={phone}
+                                  onChange={(e)=>setPhone(e.target.value)}
+                                  />
+                                </Form.Group>
+                                <Form.Group controlId="formBasicEmail">
+                                 <Form.Control 
+                                 type="text"
                                   placeholder="Enter Subject" 
+                                  required
                                   value={subject}
                                   onChange={(e)=>setSubject(e.target.value)}
                                   />
@@ -93,11 +145,13 @@ const Contact = () => {
                                      as="textarea" 
                                      rows={3}
                                      value={body} 
+                                     required
                                      placeholder="Enter Your Message" 
                                      onChange={(e)=>setBody(e.target.value)}
                                      />
                                 </Form.Group>                                                        
-                                  <Button variant="primary" type="submit">Submit</Button>
+                                  {!isSending && <Button variant="primary" type="submit">Submit</Button>}
+                                  {isSending && <Button variant="warning" disabled>Sending.............</Button>}
                               </Form>
                               {/* {isSending && <h2>Sending..................</h2>} */}
                                {success && <Alert variant='success'>

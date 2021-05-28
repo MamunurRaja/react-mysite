@@ -199,6 +199,14 @@ img {
     padding-bottom: 10px;
 }
 
+.alert-success {
+  margin-top: 20px;
+}
+
+.contact-row-address{
+  padding:10px;
+}
+
 @media only screen and (max-width: 801px) {
    .myself{
      margin-top: 60px;

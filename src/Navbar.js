@@ -19,6 +19,7 @@ const NavigationBar = () => {
                           <Link className="navText" to="/" onClick={() => setExpanded(false)}>HOME</Link>
                           <Link  className="navText" to="/skill"  onClick={() => setExpanded(false)} >SKILL</Link>
                           <Link  className="navText" to="/education"  onClick={() => setExpanded(false)}>EDUCATION</Link>
+                          <Link  className="navText" to="/contact"  onClick={() => setExpanded(false)}>CONTACT</Link>
                           {/* <Nav.Link className="navText" href="#link">CONTACT</Nav.Link> */}
                       </Nav>
                       </Navbar.Collapse>
