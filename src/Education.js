@@ -8,11 +8,8 @@ import saptashri from './images/saptashri.jpg';
 
 const Education = () => {
     return ( 
-        
-        <>
-            
+        <>  
             <div className="container edu">
-            
               <div className="row skill-head-text">
                 <div className="col-md-12">
                     <h2><u>Education</u></h2>
@@ -25,7 +22,6 @@ const Education = () => {
                             <Card.Body>
                                 <Card.Title>University of Derby, UK</Card.Title>
                                     <Card.Text>
-                                       
                                         BSc(Hons) Information Technology.
                                         <br />
                                   </Card.Text>

@@ -9,6 +9,7 @@ import { faFacebook,faLinkedin,faTwitterSquare } from '@fortawesome/free-brands-
 import MySkill from "./MySkill";
 import Education from "./Education";
 import Spinner from 'react-bootstrap/Spinner'
+import Contact from "./Contact";
 
 
 
@@ -113,6 +114,7 @@ const Home = () => {
           </div>}
               {!isLoading && <MySkill/>}
              {!isLoading && <Education/>}
+             <Contact/>
         </>
      );
 }
