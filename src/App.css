@@ -1,10 +1,10 @@
 
 .color-nav{
-    background-color:#fec608;
+    background-color:#204c55;
     
   }
 .navText{
-    color: black!important;
+    color: white!important;
 }
 
 .backgr{
@@ -45,9 +45,10 @@ img {
 }
 
 .myName{
-  color: #fec608;
+  color: red;
 }
 
+/* color: #fec608; */
 .personal-info ul{
   display: inline-block;
   list-style: none;
@@ -73,15 +74,22 @@ img {
 .download_btn{
   display: block;
   margin-top: 20px;
-  background: #fec608;
+  background: #204c55;
     text-align: center;
     line-height: 40px;
     border-radius: 20px;
-    color: #222222;
+    color: white;
     font-size: 18px;
     font-family: "Yellowtail", cursive;
     position: relative;
     overflow: hidden;
+}
+
+/* background: #fec608; */
+
+.download_btn:hover{
+  background: #fec608;
+  color:black;
 }
 
 .download_btn span {
@@ -149,7 +157,7 @@ img {
 }
 
 .progress-bar {
-  background-color: #fec608!important;
+  background-color: #204c55!important;
  
 }
 

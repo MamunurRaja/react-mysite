@@ -17,6 +17,7 @@ const Education = () => {
             </div>
               <div className="row edu-info">
                   <div className="col-xs-12 col-sm-12 col-md-4 ">
+                  <a href="https://www.derby.ac.uk/" target="_blank">
                   <Card style={{ width: '18rem' }}>
                          <Card.Img variant="top" src={derby} />
                             <Card.Body>
@@ -26,9 +27,10 @@ const Education = () => {
                                         <br />
                                   </Card.Text>
                             </Card.Body>
-                    </Card>
+                    </Card></a>
                  </div>
                   <div className="col-xs-12 col-sm-12 col-md-4 edu-card">
+                    <a href="https://www.drgrahamshomes.net/" target="_blank">
                   <Card style={{ width: '18rem' }}>
                          <Card.Img variant="top" src={homes} height="200" />
                             <Card.Body>
@@ -38,9 +40,10 @@ const Education = () => {
                                     <br />
                                   </Card.Text>
                             </Card.Body>
-                    </Card>
+                    </Card></a>
                   </div>
                   <div className="col-xs-12 col-sm-12 col-md-4 edu-card">
+                  <a href="https://www.saptashrikalimpong.com/" target="_blank">
                   <Card style={{ width: '18rem' }}>
                          <Card.Img variant="top" src={saptashri} height="200px"/>
                             <Card.Body>
@@ -49,7 +52,7 @@ const Education = () => {
                                     Indian Certificate Of Secondary Education.
                                   </Card.Text>
                             </Card.Body>
-                    </Card>
+                    </Card></a>
                   </div>
               </div>
           </div>

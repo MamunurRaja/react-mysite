@@ -61,7 +61,7 @@ const Contact = () => {
                          <div className="col-md-2">
                             <FontAwesomeIcon 
                               icon={faMapMarkerAlt} 
-                              color="#fec608"
+                              color="#204c55"
                               size="2x"
                             />
                          </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                          <div className="col-md-2">
                             <FontAwesomeIcon 
                               icon={faPhoneVolume} 
-                              color="#fec608"
+                              color="#204c55"
                               size="2x"
                             />
                          </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                          <div className="col-md-2">
                             <FontAwesomeIcon 
                               icon={faEnvelope} 
-                              color="#fec608"
+                              color="#204c55"
                               size="2x"
                             />
                          </div>

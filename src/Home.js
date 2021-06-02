@@ -4,12 +4,14 @@ import React, { useState,useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Photo from './images/Photo.jpg';
+import cv from './files/cv.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook,faLinkedin,faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import MySkill from "./MySkill";
 import Education from "./Education";
 import Spinner from 'react-bootstrap/Spinner'
 import Contact from "./Contact";
+import DisplayMap from "./displayMap";
 
 
 
@@ -40,7 +42,7 @@ const Home = () => {
                    />
                    <div className="row btnCv">
                      <div className="col-md-12">
-                     <a className="download_btn">
+                     <a href={cv} target="_blank"  className="download_btn">
                          <span>Download Resume</span>
                      </a>
                             
@@ -87,21 +89,21 @@ const Home = () => {
                         <span> 
                           <FontAwesomeIcon 
                               icon={faFacebook} 
-                              color="#fec608"
+                              color="#204c55"
                               size="2x"
                           />
                         </span>
                         <span> 
                           <FontAwesomeIcon 
                               icon={faLinkedin} 
-                              color="#fec608"
+                              color="#204c55"
                               size="2x"
                           />
                         </span>
                         <span> 
                           <FontAwesomeIcon 
                               icon={faTwitterSquare} 
-                              color="#fec608"
+                              color="#204c55"
                               size="2x"
                           />
                         </span>
@@ -114,7 +116,7 @@ const Home = () => {
           </div>}
               {!isLoading && <MySkill/>}
              {!isLoading && <Education/>}
-             {!isLoading && <Contact/>}
+             {!isLoading && <Contact/>}  
         </>
      );
 }
